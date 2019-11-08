@@ -39,7 +39,7 @@ int bfs(char* visited, int t, int n, int m, queue<Location> path, vector<vector<
         Location curr = path.front();
         path.pop();
 
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 4; i++) {	
             Location next;
             next.x = curr.x + stepX[i];
             next.y = curr.y + stepY[i];
@@ -54,8 +54,8 @@ int bfs(char* visited, int t, int n, int m, queue<Location> path, vector<vector<
 
             if (dis[next.x][next.y] == -1) {
                 dis[next.x][next.y] = dis[curr.x][curr.y] + 1;
-                path.push(next);
-                if (*(visited + next.x * n + next.y) == 'P') {
+                path.push(next);				// 下一个可以访问的点加入队列中
+                if (*(visited + next.x * n + next.y) == 'P') {	// 这里其实可以放到while循环的开头处，效果是一样的
                     if (dis[next.x][next.y] <= t) {
                         return 0;
                     } else {
