@@ -5,4 +5,5 @@
 2. [不包含两位数，二位数组](src/DigitDp/continuousNum2D.cpp)
 
 ### BFS
-1. [基础BFS，二位数组MAP中，规定步数走到某一点](src/BFS/simpleBFS.cpp)
+1. [基础BFS，规定步数内能否走到某一点](src/BFS/simpleBFS.cpp)
+2. [BFS+优先队列，到达目标点所用最少步数](src/BFS/BFS_PriorityQueue.cpp)
