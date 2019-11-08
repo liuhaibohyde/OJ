@@ -1,5 +1,8 @@
 # OJ
 
+### DP
+1. [每个金矿金子数不同，需要不同数量工人，给定工人挖出最多金子](src/DP/maxGold.c)
+
 ### 数位DP
 1. [不包含指定的一位数字，一维DP数组记录状态](src/DigitDp/simple1D.c)
 2. [不包含指定的两位数，二维DP数组记录状态](src/DigitDp/continuousNum2D.cpp)
