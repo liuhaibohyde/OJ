@@ -2,5 +2,5 @@
 
 ### 数位DP
 
-1. [一维，不包含某个一位数](src/DigitDp/simple1D.c)
-2. [二维，不包含两位数](src/DigitDp/continuousNum2D.cpp)
+1. [不包含一位数，一维数组](src/DigitDp/simple1D.c)
+2. [不包含两位数，二位数组](src/DigitDp/continuousNum2D.cpp)
