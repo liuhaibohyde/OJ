@@ -1,5 +1,8 @@
 /*
-拓扑排序：建立邻接矩阵，统计入度，每次取入度为0的节点...
+拓扑排序：
+1、建立图（邻接矩阵表示），同时统计每个节点的入度数，并入栈
+2、每次取入度为0的节点（出栈）压入结果栈中，同时刷新关联节点的入度数，如果产生新的入度0节点，入栈
+3、循环操作第二步，直到没有入度为0的节点，判断结果
 */
 
 /* 
@@ -17,7 +20,7 @@ m行关系，每行两个字母之间用<连接，如：A<B, B<C, C<D
 
 using namespace std;
 
-int TopologySort(vector<vector<int>> &G, vector<int> &d, int n, vector<int> &v)
+int TopologySort(vector<vector<int>> &G, vector<int> &d, int n, vector<int> &out)
 {
     vector<int> degree(d);
     stack<int> s;
@@ -28,14 +31,14 @@ int TopologySort(vector<vector<int>> &G, vector<int> &d, int n, vector<int> &v)
     }
 
     int flag = 0;
-    v.clear();
+    out.clear();
     while (!s.empty()) {
         if (s.size() > 1) {     // 栈中不止一个元素入度为0，说明这几个元素之间互相无法确定大小关系
             flag = 1;
         }
 
         int cur = s.top();
-        v.push_back(cur);
+        out.push_back(cur);     // 每次取出入度为0的节点，即直接存入结果表中
         s.pop();
 
         for (int i = 0; i < n; i++) {   // 遍历矩阵中剩下的节点关系
@@ -47,7 +50,8 @@ int TopologySort(vector<vector<int>> &G, vector<int> &d, int n, vector<int> &v)
             }
         }
     }
-    if (v.size() < n) {              // 此有向图有回路，两个节点互为儿子、父亲节点，导致没有入度为0的节点可取，因为个数不足
+
+    if (out.size() < n) {              // 此有向图有回路，两个节点互为儿子、父亲节点，导致没有入度为0的节点可取，因为个数不足
         return -1;
     } else {                         // 为一个拓扑序列
         if (flag == 1) {
@@ -71,7 +75,7 @@ int main()
         cin >> s;
         int v = s[0] - 'A';
         int w = s[2] - 'A';
-        if (G[v][w] == 0) {     // 同一关系，应该只计算一次
+        if (G[v][w] == 0) {     // 同一关系，只计算一次
             G[v][w] = 1;        
             degree[w] += 1;     // 统计节点的入度数
         }
