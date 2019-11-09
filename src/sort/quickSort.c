@@ -30,7 +30,7 @@ void quickSort(int *a, int low, int high)
             j--;
         }
         a[i] = a[j];
-        while (a[i] < tmp && i < j) {       // 从左向右找第一个大于tmp的数
+        while (a[i] <= tmp && i < j) {      // 从左向右找第一个大于tmp的数
             i++;
         }
         a[j] = a[i];
