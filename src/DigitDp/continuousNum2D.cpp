@@ -1,11 +1,4 @@
 /*
- * Copyright (c) Huawei Technologies Co., Ltd. 2012-2018. All rights reserved.
- * Description: 项目 bitDp2 的源文件
- * Author: l00446406
- * Create: 2019-11-07
- */
-
-/*
 给定区间[a,b]，求区间内不包含84、5的个数。
 例如845，184，15都不满足要求，而3834可以，因为84不连续且不包含5。
 */

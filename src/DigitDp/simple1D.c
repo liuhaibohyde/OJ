@@ -1,17 +1,10 @@
 /*
- * Copyright (c) Huawei Technologies Co., Ltd. 2012-2018. All rights reserved.
- * Description: 项目 bitDP 的源文件
- * Author: l00446406
- * Create: 2019-09-12
- */
-
-/*
 给定一个范围［l，r］，求出这个范围内的满足要求的数字的个数。要求是：
 这些数字不能包含某个数字n。例如，不能包含数字”1”时，那么数字22、32、4都符合要求，数字2314，1233不符合要求。
 */
 
 #include <stdio.h>
-#include "securec.h"
+#include <memory.h>
 
 int up[10+1];
 int dp[10+1];
@@ -64,7 +57,7 @@ int main()
     int l, r, n;
     scanf_s("%d %d %d", &l, &r, &n);
 
-    memset_s(dp, sizeof(dp), -1, sizeof(dp));
+    memset(dp, sizeof(dp), -1, sizeof(dp));
     printf("%d\n", solve(r, n) - solve(l - 1, n));
 
     return 0;

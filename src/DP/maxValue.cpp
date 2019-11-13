@@ -2,7 +2,8 @@
 给定总钱数，物品个数，每个物品有价格、重要度，求能达到的最大价值
 */
 #include <stdio.h>
-#include <memory>
+#include <stdlib.h>
+#include <memory.h>
 
 #define RETURN_IF(expr, errorno) do {     \
         if (expr) {              \

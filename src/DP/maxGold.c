@@ -1,4 +1,9 @@
+/*
+n座矿，每座矿产的金子数不同、所用的人不同，给定总人数，求能挖出的最多金子
+*/
+
 #include <stdio.h>
+#include <stdlib.h>
 
 const int max_mine = 100;           //程序最多的金矿数
 const int max_people = 10000;       //程序最多的人数

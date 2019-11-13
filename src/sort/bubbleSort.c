@@ -2,6 +2,9 @@
 大数沉底，没啥好说的
 */
 
+#include <stdio.h>
+#include <stdlib.h>
+
 void swap(int *a, int *b) 
 {
     int tmp = *a;
@@ -46,4 +49,17 @@ void CocktailSort(int a[], int n){
             left+=1;
         }
     }    
+}
+
+int main(){
+    int a[] = {3,5,7,2,1,0,4,65,7,89,5,3,2,5,45,3,2,54,4,543,3,33,2,34,45,5};
+    int length = sizeof(a)/sizeof(int);   
+
+    BubbleSort(a, length);
+    
+    for (int i = 0; i < length; i++) {
+        printf("%d ", a[i]);
+    }
+
+    return 0;
 }

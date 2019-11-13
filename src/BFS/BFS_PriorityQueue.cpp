@@ -1,11 +1,4 @@
 /*
- * Copyright (c) Huawei Technologies Co., Ltd. 2012-2018. All rights reserved.
- * Description: 项目 easySearch 的源文件
- * Author: l00446406
- * Create: 2019-10-29
- */
-
-/*
 坦克从其实位置走到目标位置，要求所有步数最少，求所用的步数
 地图上有河流（不可走），墙壁、铁块需要额外消耗步数
 */

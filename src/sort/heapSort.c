@@ -15,7 +15,6 @@ void Swap(int *a, int *b)
     *b = tmp;
 }
 
-/*************************** 堆排序一 ****************************/
 // 大根堆调整
 void MaxHeapify(int *a, int n, int i)       // n：堆的节点个数
 {
@@ -60,7 +59,7 @@ int main(char args, char* argv[])
     int a[10] = {12,85,25,16,34,23,49,95,17,61};
     HeapSort(a, 10);
 
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < 10; i++) {
         printf("%d ", a[i]);
     }
     
