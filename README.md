@@ -28,5 +28,5 @@
 ### 算法应用
 1. [拓扑排序，给出n个关系A<B,B<C,C<D……最快确定A-D的关系](src/Algorithm/topologySort.cpp)
 2. [二进制枚举，10个数分两组，它们的和相差最小](src/Algorithm/binaryEnumeration.c)
-3. [并查集（带权值）：给出n个区间的奇偶，求第几个区间开始与前面已知条件矛盾](src/Algorithm/unionFind.cpp)
-4. [并查集（带权值）：n个人分两组，每个条件给出两个人是一组或不是一组，判断关系](src/Algorithm/unionFind2.cpp)
+3. [并查集（带权值）判断区间权值：给出n个区间的奇偶，求第几个区间开始与前面已知条件矛盾](src/Algorithm/unionFind.cpp)
+4. [并查集（带权值）判断两个节点关系：n个人分两组，每个条件给出两个人是一组或不是一组](src/Algorithm/unionFind2.cpp)
