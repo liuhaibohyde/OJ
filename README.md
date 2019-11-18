@@ -30,3 +30,6 @@
 2. [二进制枚举，10个数分两组，它们的和相差最小](src/Algorithm/binaryEnumeration.c)
 3. [并查集（带权值）判断区间权值：给出n个区间的奇偶，求第几个区间开始与前面已知条件矛盾](src/Algorithm/unionFind.cpp)
 4. [并查集（带权值）判断两个节点关系：n个人分两组，每个条件给出两个人是一组或不是一组](src/Algorithm/unionFind2.cpp)
+5. [multimap应用，多对多字符串编码问题](src/Algorithm/decode.cpp)
+6. [线段树，对区间内的硬币反面，查询不同区间内硬币正面朝上](src/Algorithm/segementTree.cpp)
+7. [连续子区间的和大于给定的数](src/Algorithm/continuousSumNum.cpp)
