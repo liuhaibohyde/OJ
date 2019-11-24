@@ -33,6 +33,9 @@
 ### Stack
 1. [简单四则运算的变形，运算符$，#，优先级$高于#](src/stack/simpleArithmetic.c)
 
+### 贪心
+1. [优势洗牌，两个等长度数组，使A[i]>b[i]的数量最多](src/greedy/advantageCount.cpp)
+
 ### 算法应用
 1. [拓扑排序，给出n个关系A<B,B<C,C<D……最快确定A-D的关系](src/Algorithm/topologySort.cpp)
 2. [二进制枚举，10个数分两组，它们的和相差最小](src/Algorithm/binaryEnumeration.c)
