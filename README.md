@@ -35,6 +35,7 @@
 
 ### 贪心
 1. [优势洗牌，两个等长度数组，使A[i]>B[i]的数量最多](src/greedy/advantageCount.cpp)
+2. [贪心+优先队列，到达终点需要最少加油次数](src/greedy/miniFuelStop.cpp)
 
 ### 算法应用
 1. [拓扑排序，给出n个关系A<B,B<C,C<D……最快确定A-D的关系](src/Algorithm/topologySort.cpp)
