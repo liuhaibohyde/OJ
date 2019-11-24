@@ -1,6 +1,7 @@
 # OJ
 
 ### 排序
+[C/C++中库函数sort](src/sort/sort.md)
 |               排序算法               | 平均时间 | 最好时间 | 最坏时间 |  空间   | 稳定度 |             备注              |
 | :----------------------------------: | :------: | :------: | :------: | :-----: | :----: | :---------------------------: |
 |   [快速排序](src/sort/quickSort.c)   | O(nlogn) | O(nlogn) |  O(n2)   | O(logn) | 不稳定 | n较大时较好（最坏蜕变为冒泡） |
@@ -22,6 +23,9 @@
 1. [基础BFS，地图上规定步数内能否走到某一点](src/BFS/simpleBFS.cpp)
 2. [BFS+优先队列，地图上到达目标点所用最少步数](src/BFS/BFS_PriorityQueue.cpp)
 
+### DFS
+1. [数独游戏](src/DFS/sudoku.cpp)
+
 ### Stack
 1. [简单四则运算的变形，运算符$，#，优先级$高于#](src/stack/simpleArithmetic.c)
 
@@ -32,4 +36,4 @@
 4. [并查集（带权值）判断两个节点关系：n个人分两组，每个条件给出两个人是一组或不是一组](src/Algorithm/unionFind2.cpp)
 5. [multimap应用，多对多字符串编码问题](src/Algorithm/decode.cpp)
 6. [线段树，对区间内的硬币反面，查询不同区间内硬币正面朝上](src/Algorithm/segementTree.cpp)
-7. [连续子区间的和大于给定的数](src/Algorithm/continuousSumNum.cpp)
+7. [多少个连续子区间的和大于给定的数](src/Algorithm/continuousSumNum.cpp)
