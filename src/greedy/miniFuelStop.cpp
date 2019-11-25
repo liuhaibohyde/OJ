@@ -33,7 +33,7 @@ public:
                 if (iter[0][1] > startFuel) {
                     break;
                 }
-                fuels.push(iter[0][1]);             // 路过的加油站保存进优先队列
+                fuels.emplace(iter[0][1]);          // 路过的加油站保存进优先队列, C++11后尽量用emplace代替push
                 iter = stations.erase(iter);
             }
             
