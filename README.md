@@ -29,19 +29,21 @@
 
 ### DFS
 1. [数独游戏](src/DFS/sudoku.cpp)
+2. [最短路径，红蓝颜色交替有向图](src/DFS/shortestAlternatingPaths.cpp)
 
-### Stack
-1. [简单四则运算的变形，运算符$，#，优先级$高于#](src/stack/simpleArithmetic.c)
+### 并查集
+1. [带权值，判断区间权值：给出n个区间奇偶，求第几个区间开始与前面已知条件矛盾](src/DSU/rangeOddOrEven.cpp)
+2. [带权值，是否同组：n个人分两组，每个条件给出两个人是一组或不是一组](src/DSU/whichTeamAB.cpp)
+3. [图的连通性，二维网络上01相间(也可以DFS,BFS)](src/DSU/islandsNum.cpp)
 
 ### 贪心
 1. [优势洗牌，两个等长度数组，使A[i]>B[i]的数量最多](src/greedy/advantageCount.cpp)
 2. [贪心+优先队列，到达终点需要最少加油次数](src/greedy/miniFuelStop.cpp)
 
 ### 算法应用
-1. [拓扑排序，给出n个关系A<B,B<C,C<D……最快确定A-D的关系](src/Algorithm/topologySort.cpp)
-2. [二进制枚举，10个数分两组，它们的和相差最小](src/Algorithm/binaryEnumeration.c)
-3. [并查集（带权值）判断区间权值：给出n个区间的奇偶，求第几个区间开始与前面已知条件矛盾](src/Algorithm/unionFind.cpp)
-4. [并查集（带权值）判断两个节点关系：n个人分两组，每个条件给出两个人是一组或不是一组](src/Algorithm/unionFind2.cpp)
-5. [multimap应用，多对多字符串编码问题](src/Algorithm/decode.cpp)
-6. [线段树，对区间内的硬币反面，查询不同区间内硬币正面朝上](src/Algorithm/segementTree.cpp)
-7. [多少个连续子区间的和大于给定的数](src/Algorithm/continuousSumNum.cpp)
+1. [stack堆栈，简单四则运算的变形，运算符$，#，优先级$高于#](src/Algorithm/simpleArithmetic.c)
+2. [拓扑排序，给出n个关系A<B,B<C,C<D……最快确定A-D的关系](src/Algorithm/topologySort.cpp)
+3. [二进制枚举，10个数分两组，它们的和相差最小](src/Algorithm/binaryEnumeration.c)
+4. [multimap应用，多对多字符串编码问题](src/Algorithm/decode.cpp)
+5. [线段树，对区间内的硬币反面，查询不同区间内硬币正面朝上](src/Algorithm/segementTree.cpp)
+6. [多少个连续子区间的和大于给定的数](src/Algorithm/continuousSumNum.cpp)

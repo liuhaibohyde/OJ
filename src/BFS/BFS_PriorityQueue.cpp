@@ -24,7 +24,7 @@ typedef struct {
 struct tank{
     int x, y, stp;
     friend bool operator < (const tank &a, const tank &b) { 
-        return a.stp > b.stp;                                  // 小顶堆
+        return a.stp > b.stp;                                  // 小顶堆，值小的优先出队
     }
 };
 
