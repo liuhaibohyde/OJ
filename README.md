@@ -26,6 +26,7 @@
 ### BFS
 1. [基础BFS，地图上规定步数内能否走到某一点](src/BFS/simpleBFS.cpp)
 2. [BFS+优先队列，地图上到达目标点所用最少步数](src/BFS/BFS_PriorityQueue.cpp)
+3. [最短路径，红蓝颜色交替有向图](src/BFS/shortestAlternatingPath.cpp)
 
 ### DFS
 1. [数独游戏](src/DFS/sudoku.cpp)
@@ -43,7 +44,8 @@
 ### 算法应用
 1. [stack堆栈，简单四则运算的变形，运算符$，#，优先级$高于#](src/Algorithm/simpleArithmetic.c)
 2. [拓扑排序，给出n个关系A<B,B<C,C<D……最快确定A-D的关系](src/Algorithm/topologySort.cpp)
-3. [二进制枚举，10个数分两组，它们的和相差最小](src/Algorithm/binaryEnumeration.c)
-4. [multimap应用，多对多字符串编码问题](src/Algorithm/decode.cpp)
-5. [线段树，对区间内的硬币反面，查询不同区间内硬币正面朝上](src/Algorithm/segementTree.cpp)
-6. [多少个连续子区间的和大于给定的数](src/Algorithm/continuousSumNum.cpp)
+3. [拓扑排序，课程选修顺序关系](src/Algorithm/courseOrder.cpp)
+4. [二进制枚举，10个数分两组，它们的和相差最小](src/Algorithm/binaryEnumeration.c)
+5. [multimap应用，多对多字符串编码问题](src/Algorithm/decode.cpp)
+6. [线段树，对区间内的硬币反面，查询不同区间内硬币正面朝上](src/Algorithm/segementTree.cpp)
+7. [多少个连续子区间的和大于给定的数](src/Algorithm/continuousSumNum.cpp)

@@ -69,3 +69,15 @@ public:
     }
 };
 
+int main()
+{
+    Solution* so = new Solution();
+    
+    vector<vector<int>> red = {{0,1}};
+    vector<vector<int>> blue = {{1,2}};
+
+    vector<int> ans = so->shortestAlternatingPaths(3, red, blue);
+
+    delete so;
+    return 0;
+}
