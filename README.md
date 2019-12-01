@@ -49,3 +49,6 @@
 5. [multimap应用，多对多字符串编码问题](src/Algorithm/decode.cpp)
 6. [线段树，对区间内的硬币反面，查询不同区间内硬币正面朝上](src/Algorithm/segementTree.cpp)
 7. [多少个连续子区间的和大于给定的数](src/Algorithm/continuousSumNum.cpp)
+
+### CommonSense
+1. [baseConversion 进制转换](src/common/baseConversion.cpp)
