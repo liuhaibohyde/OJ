@@ -6,16 +6,16 @@
 2. [只交换相邻两数，使序列升序排列，求出最少交换次数](src/sort/miniSwapCount1.cpp)
 3. [交换任意两个位置元素，是序列升序，求最少交换次数](src/sort/miniSwapCount2.cpp)
 
-|               排序算法               | 平均时间 | 最好时间 | 最坏时间 |  空间   | 稳定度 |                            备注                             |
-| :----------------------------------: | :------: | :------: | :------: | :-----: | :----: | :---------------------------------------------------------: |
-|   [快速排序](src/sort/quickSort.c)   | O(nlogn) | O(nlogn) |  O(n2)   | O(logn) | 不稳定 |                n较大时较好（最坏蜕变为冒泡）                |
-|    [堆排序](src/sort/heapSort.c)     | O(nlogn) | O(nlogn) | O(nlogn) |  O(1)   | 不稳定 |                         n较大时较好                         |
-|  [桶排序](src/sort/bucketSort.cpp)   |  O(n+c)  |   O(n)   | O(nlogn) | O(n+m)  |  稳定  | n个数,m桶数,桶越多效率越高(同时占用很大空间),桶内部可用快排 |
-|  [计数排序](src/sort/countSort.cpp)  |  O(n+k)  |  O(n+k)  |  O(n+k)  | O(n+k)  |  稳定  |                        优于比较排序                         |
-|   [归并排序](src/sort/mergeSort.c)   | O(nlogn) | O(nlogn) | O(nlogn) |  O(n)   |  稳定  |                         n较大时较好                         |
-|  [冒泡排序](src/sort/bubbleSort.c)   |  O(n2)   |  O(n2)   |   O(n)   |  O(1)   |  稳定  |                  n较小时较好（一般不推荐）                  |
-| [直接插入](src/sort/InsertionSort.c) |  O(n2)   |  O(n2)   |   O(n)   |  O(1)   |  稳定  |                     大部分已排序时较好                      |
-| [直接选择](src/sort/selectionSort.c) |  O(n2)   |  O(n2)   |  O(n2)   |  O(1)   | 不稳定 |                         n较小时较好                         |
+|               排序算法               | 平均时间 | 最好时间 | 最坏时间 |  空间   | 稳定度 |             备注              |
+| :----------------------------------: | :------: | :------: | :------: | :-----: | :----: | :---------------------------: |
+|   [快速排序](src/sort/quickSort.c)   | O(nlogn) | O(nlogn) |  O(n2)   | O(logn) | 不稳定 | n较大时较好（最坏蜕变为冒泡） |
+|    [堆排序](src/sort/heapSort.c)     | O(nlogn) | O(nlogn) | O(nlogn) |  O(1)   | 不稳定 |          n较大时较好          |
+|  [桶排序](src/sort/bucketSort.cpp)   |  O(n+c)  |   O(n)   | O(nlogn) | O(n+m)  |  稳定  | m:桶越多效率越高(占更多空间)  |
+|  [计数排序](src/sort/countSort.cpp)  |  O(n+k)  |  O(n+k)  |  O(n+k)  | O(n+k)  |  稳定  |         优于比较排序          |
+|   [归并排序](src/sort/mergeSort.c)   | O(nlogn) | O(nlogn) | O(nlogn) |  O(n)   |  稳定  |          n较大时较好          |
+|  [冒泡排序](src/sort/bubbleSort.c)   |  O(n2)   |  O(n2)   |   O(n)   |  O(1)   |  稳定  |   n较小时较好（一般不推荐）   |
+| [直接插入](src/sort/InsertionSort.c) |  O(n2)   |  O(n2)   |   O(n)   |  O(1)   |  稳定  |      大部分已排序时较好       |
+| [直接选择](src/sort/selectionSort.c) |  O(n2)   |  O(n2)   |  O(n2)   |  O(1)   | 不稳定 |          n较小时较好          |
 
 ### DP
 1. [挖金矿：每个金矿金子数不同，需要不同数量工人，给定工人挖出最多金子](src/DP/maxGold.c)
