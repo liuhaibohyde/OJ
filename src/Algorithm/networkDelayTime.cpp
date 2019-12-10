@@ -75,45 +75,41 @@ class Solution {
 public:
     int networkDelayTime(vector<vector<int>>& times, int N, int K)
     {
-        vector<vector<int>> dist(N + 1, vector<int>(N + 1, -1));
-        for (int i = 0; i < times.size(); i++) {
-            dist[times[i][0]][times[i][1]] = times[i][2];
+        vector<vector<int>> dist(N + 1, vector<int>(N + 1, INT32_MAX));
+        for (auto& iter : times) {
+            dist[iter[0]][iter[1]] = iter[2];
+        }
+        for (int i = 0; i < dist.size(); i++) {
+            dist[i][i] = 0;
         }
 
-        vector<int> res(N + 1, -1);
-        vector<int> q(N + 1, -1);
-        for (int i = 1; i < N + 1; i++) {  // 更新K点到其它点的距离
-            q[i] = dist[K][i];
-        }
-        q[K] = 0;  // K->K 记为0
-
-        int minValue;
-        int minIdx = -1;
-        for (int loop = 0; loop < N; loop++) {
-            minValue = -1;
-            for (int i = 1; i < q.size(); i++) {  // 未访问过的，找出所有K->i的最小值
-                if ((res[i] == -1 && q[i] != -1) && (minValue == -1 || q[i] < minValue)) {
+        vector<bool> visited(N + 1, false);
+        for (int loop = 0; loop < N; loop++) {  // 循环n轮
+            int minValue = INT32_MAX;
+            int minIdx = 0;
+            for (int i = 1; i < dist.size(); i++) {
+                if (!visited[i] && dist[K][i] < minValue) {  // 未访问过的点中查找K能到达的点的最小值
+                    minValue = dist[K][i];
                     minIdx = i;
-                    minValue = q[i];
                 }
             }
-            if (minValue == -1) {
-                break;
+            if (minValue == INT32_MAX) {
+                return -1;
             }
-            res[minIdx] = minValue;
-            for (int i = 1; i < q.size(); i++) {  // 以minIdx为起点，计算更新所有点的距离
-                if (dist[minIdx][i] != -1 && (minValue + dist[minIdx][i] < q[i] || q[i] == -1)) {
-                    q[i] = minValue + dist[minIdx][i];
+            visited[minIdx] = true;
+            for (int i = 1; i < dist.size(); i++) {  // 以minIdx为起点，松弛
+                if (dist[minIdx][i] != INT32_MAX && (minValue + dist[minIdx][i] < dist[K][i])) {
+                    dist[K][i] = minValue + dist[minIdx][i];
                 }
             }
         }
 
         int ans = -1;
-        for (int i = 1; i < res.size(); i++) {
-            if (res[i] == -1) {
+        for (int i = 1; i < dist.size(); i++) {
+            if (dist[K][i] == INT32_MAX) {
                 return -1;
             }
-            ans = max(ans, res[i]);
+            ans = max(ans, dist[K][i]);
         }
         return ans;
     }
@@ -170,24 +166,23 @@ class Solution {
 public:
     int networkDelayTime(vector<vector<int>>& times, int N, int K)
     {
-        vector<vector<int>> dist(N + 1, vector<int>(N + 1, -1));
+        vector<vector<int>> dist(N + 1, vector<int>(N + 1, INT32_MAX));
+        for (auto& iter : times) {
+            dist[iter[0]][iter[1]] = iter[2];
+        }
         for (int i = 0; i < dist.size(); i++) {
             dist[i][i] = 0;
         }
-        for (int i = 0; i < times.size(); i++) {
-            dist[times[i][0]][times[i][1]] = times[i][2];
-        }
 
-        vector<int> res(N + 1, -1);  // res[i]即表示k到i点的距离
+        vector<int> res(N + 1, INT32_MAX);  // 松弛成功的顶点需要入列，这里需要额外的一个数组
         res[K] = 0;
         queue<int> q;
         q.emplace(K);  // 从起点K开始入列
-
         while (!q.empty()) {
             auto cur = q.front();
             q.pop();
-            for (int i = 1; i < dist.size(); i++) {
-                if (dist[cur][i] != -1 && (res[cur] + dist[cur][i] < res[i] || res[i] == -1)) {
+            for (int i = 1; i < dist.size(); i++) { // 以当前点为起点，松弛
+                if (dist[cur][i] != INT32_MAX && (res[cur] + dist[cur][i] < res[i])) {
                     res[i] = res[cur] + dist[cur][i];
                     q.emplace(i);  // 松弛成功的顶点入列,判断存在负环，可以记录每个点的入列次数，大于总顶点数即存在
                 }
@@ -196,7 +191,7 @@ public:
 
         int ans = -1;
         for (int i = 1; i < N + 1; i++) {
-            if (res[i] == -1) {
+            if (res[i] == INT32_MAX) {
                 return -1;
             }
             ans = max(ans, res[i]);
