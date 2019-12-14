@@ -53,7 +53,8 @@
 7. [图的最短路径 - 迪杰斯特拉Dijkstra,Floyd,SPFA](src/Algorithm/networkDelayTime.cpp)
 8. [单调栈 - 股票价格跨度，数组左侧连续比自己小的数个数](src/Algorithm/StockSpanner.cpp)
 9. [滑动窗口+双端队列 - 窗口内最大值](src/Algorithm/maxSlidingWindow.cpp)
-10. [滑动窗口 - 最小覆盖子串](src/Algorithm/minWindow.cpp)
+10. [滑动窗口 - 最小长度异位词](src/Algorithm/minWindow.cpp)
+11. [滑动窗口 - 所有长度相同异位词](src/Algorithm/findAnagrams.cpp)
 
 ### CommonSense
 1. [baseConversion 进制转换](src/common/baseConversion.cpp)
