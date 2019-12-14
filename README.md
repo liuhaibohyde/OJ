@@ -20,6 +20,7 @@
 ### DP
 1. [挖金矿：每个金矿金子数不同，需要不同数量工人，给定工人挖出最多金子](src/DP/maxGold.c)
 2. [01背包：给定总钱数、物品个数，每个物品有价格、重要度，求能达到的最大价值](src/DP/maxValue.cpp)
+3. [股票问题](src/DP/sharesProblem.cpp)
 
 ### 数位DP
 1. [不包含指定的一位数字，一维DP数组记录状态](src/DigitDp/simple1D.c)
@@ -56,3 +57,5 @@
 
 ### CommonSense
 1. [baseConversion 进制转换](src/common/baseConversion.cpp)
+
+
