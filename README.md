@@ -49,7 +49,10 @@
 4. [二进制枚举，10个数分两组，它们的和相差最小](src/Algorithm/binaryEnumeration.c)
 5. [线段树，对区间内的硬币反面，查询不同区间内硬币正面朝上](src/Algorithm/segementTree.cpp)
 6. [多少个连续子区间的和大于给定的数](src/Algorithm/continuousSumNum.cpp)
-7. [迪杰斯特拉Dijkstra,Floyd,SPFA,有向图最短路径](src/Algorithm/networkDelayTime.cpp)
+7. [图的最短路径 - 迪杰斯特拉Dijkstra,Floyd,SPFA](src/Algorithm/networkDelayTime.cpp)
+8. [单调栈 - 股票价格跨度，数组左侧连续比自己小的数个数](src/Algorithm/StockSpanner.cpp)
+9. [滑动窗口+双端队列 - 窗口内最大值](src/Algorithm/maxSlidingWindow.cpp)
+10. [滑动窗口 - 最小覆盖子串](src/Algorithm/minWindow.cpp)
 
 ### CommonSense
 1. [baseConversion 进制转换](src/common/baseConversion.cpp)
