@@ -4,6 +4,7 @@
 */
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <memory.h>
 
 int up[10+1];
@@ -57,7 +58,7 @@ int main()
     int l, r, n;
     scanf_s("%d %d %d", &l, &r, &n);
 
-    memset(dp, sizeof(dp), -1, sizeof(dp));
+    memset(dp, -1, sizeof(dp));
     printf("%d\n", solve(r, n) - solve(l - 1, n));
 
     return 0;
