@@ -56,8 +56,8 @@
 10. [滑动窗口 - 最小长度异位词](src/Algorithm/minWindow.cpp)
 11. [滑动窗口 - 所有长度相同异位词](src/Algorithm/findAnagrams.cpp)
 12. [滑动窗口 - 无重复字符最长子串](src/Algorithm/lengthOfLongestSubstring.cpp)
-13. [字典树/前缀树 - 倒叙查询字符流是否出现在字典中]()
-14. [BIT树状数组 - 求数组中的翻转对数量：i < j && nums[i] > 2*nums[j]](src/Algorithm/reversePairs.cpp)
+13. [字典树/前缀树 - 倒叙查询字符流是否出现在字典中](src/Algorithm/StreamChecker.cpp)
+14. [BIT树状数组 - 求数组中的翻转对数量(左边的数大于等于右边数的两倍)](src/Algorithm/reversePairs.cpp)
 
 ### CommonSense
 1. [baseConversion 进制转换](src/common/baseConversion.cpp)
