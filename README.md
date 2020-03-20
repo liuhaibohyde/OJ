@@ -11,7 +11,7 @@
 |   [快速排序](src/sort/quickSort.c)   | O(nlogn) | O(nlogn) |  O(n2)   | O(logn) | 不稳定 | n较大时较好（最坏蜕变为冒泡） |
 |    [堆排序](src/sort/heapSort.c)     | O(nlogn) | O(nlogn) | O(nlogn) |  O(1)   | 不稳定 |          n较大时较好          |
 |  [桶排序](src/sort/bucketSort.cpp)   |  O(n+c)  |   O(n)   | O(nlogn) | O(n+m)  |  稳定  | m:桶越多效率越高(占更多空间)  |
-|  [计数排序](src/sort/countSort.cpp)  |  O(n+k)  |  O(n+k)  |  O(n+k)  | O(n+k)  |  稳定  |         优于比较排序          |
+|  [计数排序](src/sort/countSort.c)    |  O(n+k)  |  O(n+k)  |  O(n+k)  | O(n+k)  |  稳定  |         优于比较排序          |
 |   [归并排序](src/sort/mergeSort.c)   | O(nlogn) | O(nlogn) | O(nlogn) |  O(n)   |  稳定  |          n较大时较好          |
 |  [冒泡排序](src/sort/bubbleSort.c)   |  O(n2)   |  O(n2)   |   O(n)   |  O(1)   |  稳定  |   n较小时较好（一般不推荐）   |
 | [直接插入](src/sort/InsertionSort.c) |  O(n2)   |  O(n2)   |   O(n)   |  O(1)   |  稳定  |      大部分已排序时较好       |
