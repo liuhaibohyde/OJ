@@ -1,7 +1,6 @@
 # OJ
 
 ### 排序
-
 1. [C/C++中排序相关库函数](src/sort/sort.md)
 2. [只交换相邻两数，使序列升序排列，求出最少交换次数](src/sort/miniSwapCount1.cpp)
 3. [交换任意两个位置元素，是序列升序，求最少交换次数](src/sort/miniSwapCount2.cpp)
@@ -44,20 +43,21 @@
 2. [贪心+优先队列，到达终点需要最少加油次数](src/greedy/miniFuelStop.cpp)
 
 ### 算法应用
-1. [stack堆栈，简单四则运算的变形，运算符$，#，优先级$高于#](src/Algorithm/simpleArithmetic.c)
-2. [拓扑排序，给出n个关系A<B,B<C,C<D……最快确定A-D的关系](src/Algorithm/topologySort.cpp)
-3. [拓扑排序，课程选修顺序关系](src/Algorithm/courseOrder.cpp)
-4. [二进制枚举，10个数分两组，它们的和相差最小](src/Algorithm/binaryEnumeration.c)
-5. [线段树，对区间内的硬币反面，查询不同区间内硬币正面朝上](src/Algorithm/segementTree.cpp)
-6. [多少个连续子区间的和大于给定的数](src/Algorithm/continuousSumNum.cpp)
-7. [图的最短路径 - 迪杰斯特拉Dijkstra,Floyd,SPFA](src/Algorithm/networkDelayTime.cpp)
-8. [单调栈 - 股票价格跨度，数组左侧连续比自己小的数个数](src/Algorithm/StockSpanner.cpp)
-9. [滑动窗口+双端队列 - 窗口内最大值](src/Algorithm/maxSlidingWindow.cpp)
-10. [滑动窗口 - 最小长度异位词](src/Algorithm/minWindow.cpp)
-11. [滑动窗口 - 所有长度相同异位词](src/Algorithm/findAnagrams.cpp)
-12. [滑动窗口 - 无重复字符最长子串](src/Algorithm/lengthOfLongestSubstring.cpp)
-13. [字典树/前缀树 - 倒叙查询字符流是否出现在字典中](src/Algorithm/StreamChecker.cpp)
-14. [BIT树状数组 - 求数组中的翻转对数量(左边的数大于等于右边数的两倍)](src/Algorithm/reversePairs.cpp)
+1. [KMP 字符串匹配](src/Algorithm/strStr.cpp)
+2. [stack堆栈，简单四则运算的变形，运算符$，#，优先级$高于#](src/Algorithm/simpleArithmetic.c)
+3. [拓扑排序，给出n个关系A<B,B<C,C<D……最快确定A-D的关系](src/Algorithm/topologySort.cpp)
+4. [拓扑排序，课程选修顺序关系](src/Algorithm/courseOrder.cpp)
+5. [二进制枚举，10个数分两组，它们的和相差最小](src/Algorithm/binaryEnumeration.c)
+6. [线段树，对区间内的硬币反面，查询不同区间内硬币正面朝上](src/Algorithm/segementTree.cpp)
+7. [多少个连续子区间的和大于给定的数](src/Algorithm/continuousSumNum.cpp)
+8. [图的最短路径 - 迪杰斯特拉Dijkstra,Floyd,SPFA](src/Algorithm/networkDelayTime.cpp)
+9. [单调栈 - 股票价格跨度，数组左侧连续比自己小的数个数](src/Algorithm/StockSpanner.cpp)
+10. [滑动窗口+双端队列 - 窗口内最大值](src/Algorithm/maxSlidingWindow.cpp)
+11. [滑动窗口 - 最小长度异位词](src/Algorithm/minWindow.cpp)
+12. [滑动窗口 - 所有长度相同异位词](src/Algorithm/findAnagrams.cpp)
+13. [滑动窗口 - 无重复字符最长子串](src/Algorithm/lengthOfLongestSubstring.cpp)
+14. [字典树/前缀树 - 倒叙查询字符流是否出现在字典中](src/Algorithm/StreamChecker.cpp)
+15. [BIT树状数组 - 求数组中的翻转对数量(左边的数大于等于右边数的两倍)](src/Algorithm/reversePairs.cpp)
 
 ### CommonSense
 1. [baseConversion 进制转换](src/common/baseConversion.cpp)
